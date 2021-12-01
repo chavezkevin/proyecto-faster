@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2? family = Comfortaa: wght @ 300; 500; 700 & family = Josefin + Sans: ital, wght @ 1,300; 1,400; 1,600 & display = intercambio');
+html{
+    font-family:'Comfortaa', cursiva;
+    font-family: 'Josefin Sans', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.menu{
+    background-color: #FB8B24;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1rem;
+}
+
+li{
+    margin: 2rem;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    background-color: #6A7062;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    background-color: #52FFB8;
+}
+
+.encabezado{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #FB8B24;
+}
+
+.novedades, .complementos {
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+    border-radius: 2rem;
+    background-color: #6A7062;
+}
+
+.grilla4{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin: 1rem;
+    gap: .5rem;
+}
+
+.grilla4 img {
+    width: 98%;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: center;
+    border: outset #FB8B24;
+}
+
+.precios{
+    background-color: #52FFB8;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 3rem;
+    background-color: #6A7062;
+}
+
+.instagram{
+    width: 10%;
+}
+
+
+/*hasta aqui mi pagina de inicio*/
+
+
+.subtitulo1{
+    background-color: #52FFB8;
+    padding-left: 3rem;
+}
+
+.grilla2{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.grilla2 img{
+    width: 92%;
+    object-fit: cover;
+    object-position: center;
+    border: outset #FB8B24;
+}
+
+.grilla3{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.grilla3 img{
+    width: 98%;
+    object-fit: cover;
+    object-position: center;
+    border: outset #FB8B24;
+}
+
+
+/*hasta aqui la pajina de bicis*/
+
+
+.contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem;
+}
+
+.nombre, .email{
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.comentario{
+    padding: 0.5rem;
+}
+
+
+/* hasta aqui la pagina de contactos*/
+
+
+.grilla6{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.grilla6 img{
+    width: 95%;
+    object-fit: cover;
+    object-position: center;
+    border: outset #FB8B24;
+}
+
+
+/*----MEDIA QUERIES----*/
+
+
+@media screen and (max-width: 768px) {
+    
+    .grilla3{
+        grid-template-columns: auto auto auto;
+        align-items: stretch;
+        margin: 1rem;
+        display: flex;
+        justify-content: center;
+    }
+    .grilla3 img{
+        width: 70%;
+        object-fit: cover;
+        object-position: center;
+        border: outset #FB8B24;
+    }
+
+    .grilla4{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+    }
+    .grilla4 img {
+        width: 70%;
+    }
+
+    .grilla6{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+}
+
+@media screen and (max-width: 425px){
+
+    .menu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    li {
+        margin: .5rem;
+    }
+
+    h1 {
+        font-size: 105%;
+    }
+
+    .encabezado{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .encabezado div {
+        margin: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .grilla2 div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .grilla4 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .grilla4 div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .grilla3 {
+        display: flex;
+        flex-direction: column;
+}
+
+    .grilla3 div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+}
+
+    .grilla6 div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+
